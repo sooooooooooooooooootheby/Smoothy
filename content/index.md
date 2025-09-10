@@ -2,9 +2,16 @@
 
 Welcome to the fascinating world of terrarium gardening! This comprehensive guide will walk you through creating your own miniature ecosystem that brings nature indoors.
 
-## What is a Terrarium?
+This article refers to:
 
-A terrarium is essentially a miniature garden housed within a transparent container. These self-sustaining ecosystems create their own water cycle and require minimal maintenance once established. Think of it as capturing a piece of the forest floor and bringing it into your living space.
+- [UTTU Magazine](/)
+- [Daily Morning News: Issue 305](/)
+
+And we would like to express our gratitude to *The Language of Plants* for its strong support for this article.
+
+> What is a Terrarium?
+>
+> A terrarium is essentially a miniature garden housed within a transparent container. These self-sustaining ecosystems create their own water cycle and require minimal maintenance once established. Think of it as capturing a piece of the forest floor and bringing it into your living space.
 
 ### Why Create a Terrarium?
 
