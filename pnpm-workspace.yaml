@@ -1,4 +1,5 @@
 onlyBuiltDependencies:
-    - "@parcel/watcher"
-    - better-sqlite3
-    - esbuild
+  - '@parcel/watcher'
+  - '@tailwindcss/oxide'
+  - better-sqlite3
+  - esbuild
