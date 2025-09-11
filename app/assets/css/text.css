@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+.typography {
+	/* Headers and text */
+	h1 {
+		@apply text-4xl font-bold mb-8 text-default;
+	}
+	h2 {
+		@apply text-2xl font-bold mt-12 mb-6 text-default;
+
+		a {
+			@apply text-default;
+		}
+	}
+	h3 {
+		@apply text-xl font-bold mt-8 mb-3 text-default;
+
+		a {
+			@apply text-default;
+		}
+	}
+	h4 {
+		@apply text-lg font-bold mt-6 mb-2 text-default;
+
+		a {
+			@apply text-default;
+		}
+	}
+	p {
+		@apply my-5 leading-7 text-default-1;
+	}
+    strong, em {
+        @apply font-bold text-default-1;
+    }
+    em {
+        @apply font-normal;
+    }
+	a {
+		@apply text-purple-400 duration-150;
+	}
+	a:hover {
+		@apply text-purple-600 underline;
+	}
+    blockquote {
+        @apply border-s-4 border-gray-800 ps-4 italic;
+    }
+	hr {
+		@apply border-t border-default my-12;
+	}
+}
