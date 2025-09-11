@@ -27,10 +27,10 @@ Your container choice sets the foundation for your terrarium's success. Glass ve
 
 ### Layering Materials
 
-- **Drainage stones** - Pebbles, aquarium gravel, or activated charcoal (2-3 inches)
-- **Activated charcoal** - Filters water and prevents bacterial growth (½ inch)
-- **Sphagnum moss** - Acts as a barrier between soil and drainage (thin layer)
-- **Potting soil** - Choose based on your plant selection (2-4 inches)
+1. **Drainage stones** - Pebbles, aquarium gravel, or activated charcoal (2-3 inches)
+2. **Activated charcoal** - Filters water and prevents bacterial growth (½ inch)
+3. **Sphagnum moss** - Acts as a barrier between soil and drainage (thin layer)
+4. **Potting soil** - Choose based on your plant selection (2-4 inches)
 
 ### Plant Selection Guide
 

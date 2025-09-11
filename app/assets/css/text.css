@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "./utilities.css";
 
 .typography {
 	/* Headers and text */
@@ -27,10 +27,10 @@
 		}
 	}
 	p {
-		@apply my-5 leading-7 text-default-1;
+		@apply my-5 leading-7 text-default;
 	}
     strong, em {
-        @apply font-bold text-default-1;
+        @apply font-bold text-default;
     }
     em {
         @apply font-normal;
@@ -46,5 +46,20 @@
     }
 	hr {
 		@apply border-t border-default my-12;
+	}
+
+	ul {
+		@apply list-disc ps-6 my-5 marker:text-gray-200;
+
+		li {
+			@apply my-1.5 ps-1.5 leading-7 [&>ul]:my-0;
+		}
+	}
+	ol {
+		@apply list-decimal ps-6 my-5 marker:text-gray-500;
+
+		li {
+			@apply my-1.5 ps-1.5 leading-7 [&>ul]:my-0;
+		}
 	}
 }

@@ -1,16 +1,1 @@
 @import "tailwindcss";
-@tailwind utilities;
-
-/* 边框 */
-@utilities border-default {
-	@apply border-gray-200 dark:border-gray-800;
-}
-
-/* 字体 */
-@utilities text-default {
-	@apply text-gray-800 dark:text-gray-200;
-}
-
-@utilities text-default-1 {
-	@apply text-gray-700 dark:text-gray-300;
-}
