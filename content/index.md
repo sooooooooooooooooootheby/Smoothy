@@ -1,5 +1,7 @@
 # Building Your First Terrarium Garden 🌿
 
+![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg)
+
 Welcome to the fascinating world of terrarium gardening! This comprehensive guide will walk you through creating your own miniature ecosystem that brings nature indoors.
 
 This article refers to:

@@ -12,8 +12,10 @@
 	},
 	"dependencies": {
 		"@nuxt/content": "^3.6.3",
+		"@nuxt/kit": "^4.1.2",
 		"@tailwindcss/vite": "^4.1.13",
 		"better-sqlite3": "^12.2.0",
+		"medium-zoom": "^1.1.0",
 		"nuxt": "^4.1.1",
 		"prettier": "^3.6.2",
 		"prettier-plugin-tailwindcss": "^0.6.14",
