@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div v-if="content">
-			<ContentRenderer :value="content" />
+			<ContentRenderer class="typography" :value="content" />
 		</div>
 		<div v-else>
 			<p>文章不存在</p>
