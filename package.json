@@ -17,6 +17,7 @@
 		"better-sqlite3": "^12.2.0",
 		"medium-zoom": "^1.1.0",
 		"nuxt": "^4.1.1",
+		"nuxt-shiki": "0.3.1",
 		"prettier": "^3.6.2",
 		"prettier-plugin-tailwindcss": "^0.6.14",
 		"sass": "^1.92.1",

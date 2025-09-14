@@ -12,6 +12,7 @@ export default defineNuxtModule({
 		const resolver = createResolver(import.meta.url);
 		const runtimeDir = resolver.resolve("./runtime");
 		const runtimeStylesPath = resolver.resolve("./runtime/styles/content-enhancer.css");
+		const shikiStylesPath = resolver.resolve("./runtime/styles/shiki.css");
 
 		// 注册组件
 		addComponentsDir({
@@ -26,5 +27,6 @@ export default defineNuxtModule({
 		// 添加样式文件
 		nuxt.options.css = nuxt.options.css || [];
 		nuxt.options.css.push(runtimeStylesPath);
+		nuxt.options.css.push(shikiStylesPath);
 	},
 });

@@ -1,0 +1,23 @@
+@import "./utilities.css";
+
+.codeBlock {
+	@apply border-1 border-default rounded-xl text-sm min-h-[16.5px] relative;
+
+	.filename {
+		@apply border-b-1 border-default py-2 px-5;
+
+		p {
+			@apply m-0 text-gray-500;
+		}
+	}
+	code {
+		@apply p-5 block w-full bg-gray-50!;
+	}
+
+	.copy {
+		@apply transition-transform active:scale-90 opacity-0 absolute z-10 right-2 top-2 border-1 border-default flex p-1.5 rounded-lg hover:bg-gray-100 duration-150;
+	}
+	&:hover .copy {
+		@apply opacity-100;
+	}
+}

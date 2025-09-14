@@ -2,6 +2,32 @@
 
 ![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg)
 
+``` javascript [nuxt.config.ts] {1, 2, 6}
+const mediumZoom = (selector, options = {}) => {
+  // ...
+
+  let scrollTop = 0
+  let isAnimating = false
+
+  const { scrollOffset = 40 } = options
+
+  const zoom = () => {
+    scrollTop = document.body.scrollTop
+    // ...
+  }
+
+  const onScroll = () => {
+    if (isAnimating || !target) return
+
+    const scrolling = Math.abs(scrollTop - document.body.scrollTop)
+
+    if (scrolling > options.scrollOffset) {
+      zoomOut()
+    }
+  }
+}
+```
+
 Welcome to the fascinating world of terrarium gardening! This comprehensive guide will walk you through creating your own miniature ecosystem that brings nature indoors.
 
 This article refers to:
