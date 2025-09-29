@@ -1,6 +1,12 @@
 # Building Your First Terrarium Garden 🌿
 
-![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg)
+::badge
+v1.2.0
+::
+
+---
+
+<!-- ![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg) -->
 
 ``` javascript [nuxt.config.ts] {1, 2, 6}
 const mediumZoom = (selector, options = {}) => {
