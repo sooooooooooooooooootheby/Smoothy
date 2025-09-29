@@ -4,7 +4,7 @@
 			<Enhancer :content="content" />
 		</div>
 		<div v-else>
-			<p>文章不存在</p>
+			<p>The article does not exist.</p>
 		</div>
 	</div>
 </template>

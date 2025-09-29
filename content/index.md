@@ -6,7 +6,7 @@ v1.2.0
 
 ---
 
-<!-- ![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg) -->
+![测试图片](https://image.s22y.moe/GgNVjIHa4AASGqz.jpg)
 
 ``` javascript [nuxt.config.ts] {1, 2, 6}
 const mediumZoom = (selector, options = {}) => {
