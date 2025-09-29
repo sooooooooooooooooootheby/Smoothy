@@ -2,8 +2,8 @@ import { defineNuxtModule, createResolver, addComponentsDir, addPlugin, installM
 
 export default defineNuxtModule({
 	meta: {
-		name: "Smoothy",
-		configKey: "Smoothy",
+		name: "s22y-Smoothy",
+		configKey: "s22y-Smoothy",
 	},
 	defaults: {
 		mdc: true,
