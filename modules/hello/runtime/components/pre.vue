@@ -16,7 +16,6 @@ import IconCopyCheck from "./Icon/copyCheck.vue";
 import IconCopyXmark from "./Icon/copyXmark.vue";
 
 const props = defineProps<{
-	className: string;
 	code: string;
 	filename?: string;
 	highlights?: number[];
