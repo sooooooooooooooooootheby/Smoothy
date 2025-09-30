@@ -1,9 +1,9 @@
 {
 	"name": "nuxt-smoothy",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"author": "sooooooooooooooooootheby",
 	"description": "一个nuxt模块, 用于对文章的排版以及MDC组件支持.",
-	"repository": "your-org/my-module",
+	"repository": "https://github.com/sooooooooooooooooootheby/Smoothy",
 	"license": "MIT",
 	"type": "module",
 	"exports": {

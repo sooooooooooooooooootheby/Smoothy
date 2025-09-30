@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import IconCopy from "./Icon/copy.vue";
 import IconCopyCheck from "./Icon/copyCheck.vue";
 import IconCopyXmark from "./Icon/copyXmark.vue";

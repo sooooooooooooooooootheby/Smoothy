@@ -28,7 +28,7 @@ export default defineNuxtModule<ModuleOptions>({
 		});
 
 		// 注册插件
-		addPlugin(resolver.resolve("./runtime/mediumZoom.client.ts"));
+		addPlugin(resolver.resolve("./runtime/mediumZoom.client.js"));
 
 		// 添加样式文件
 		_nuxt.options.css = _nuxt.options.css || [];

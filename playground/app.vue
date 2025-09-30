@@ -2,7 +2,7 @@
 	<div>
 		<div v-if="content" class="w-2xl mx-auto my-12">
 			<Enhancer :content="content" />
-			<!-- <pre>{{ content }}</pre> -->
+			<pre>{{ content }}</pre>
 		</div>
 		<div v-else>
 			<p>The article does not exist.</p>
