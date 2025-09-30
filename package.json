@@ -1,33 +1,71 @@
 {
-	"name": "s22y-Smoothy",
-	"version" : "1.0.0",
+	"name": "nuxt-smoothy",
+	"version": "1.0.0",
 	"author": "sooooooooooooooooootheby",
 	"description": "一个nuxt模块, 用于对文章的排版以及MDC组件支持.",
-	"keywords":["nuxt","modules"],
+	"repository": "your-org/my-module",
+	"license": "MIT",
 	"type": "module",
-	"private": true,
+	"exports": {
+		".": {
+			"types": "./dist/types.d.mts",
+			"import": "./dist/module.mjs"
+		}
+	},
+	"main": "./dist/module.mjs",
+	"typesVersions": {
+		"*": {
+			".": [
+				"./dist/types.d.mts"
+			]
+		}
+	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare",
+		"prepack": "nuxt-module-build build",
+		"dev": "npm run dev:prepare && nuxi dev playground",
+		"dev:build": "nuxi build playground",
+		"dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+		"release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+		"lint": "eslint .",
+		"test": "vitest run",
+		"test:watch": "vitest watch",
+		"test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit",
 		"prettier": "npx prettier . --write"
 	},
 	"dependencies": {
-		"@nuxt/content": "^3.6.3",
 		"@nuxt/kit": "^4.1.2",
 		"@tailwindcss/vite": "^4.1.13",
-		"better-sqlite3": "^12.2.0",
 		"medium-zoom": "^1.1.0",
-		"nuxt": "^4.1.1",
-		"nuxt-shiki": "0.3.1",
+		"nuxt-shiki": "^0.3.1",
 		"prettier": "^3.6.2",
 		"prettier-plugin-tailwindcss": "^0.6.14",
-		"sass": "^1.92.1",
-		"tailwindcss": "^4.1.13",
-		"vue": "^3.5.21",
-		"vue-router": "^4.5.1"
+		"tailwindcss": "^4.1.13"
+	},
+	"devDependencies": {
+		"@nuxt/devtools": "^2.6.5",
+		"@nuxt/eslint-config": "^1.9.0",
+		"@nuxt/module-builder": "^1.0.2",
+		"@nuxt/schema": "^4.1.2",
+		"@nuxt/test-utils": "^3.19.2",
+		"@types/node": "latest",
+		"changelogen": "^0.6.2",
+		"eslint": "^9.36.0",
+		"nuxt": "^4.1.2",
+		"typescript": "~5.9.2",
+		"vitest": "^3.2.4",
+		"vue-tsc": "^3.1.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@tailwindcss/oxide",
+			"better-sqlite3",
+			"esbuild",
+			"unrs-resolver"
+		]
 	},
 	"packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
 }

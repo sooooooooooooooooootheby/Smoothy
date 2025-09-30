@@ -1,14 +1,18 @@
-import { defineNuxtModule, createResolver, addComponentsDir, addPlugin, installModule } from "@nuxt/kit";
+import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from "@nuxt/kit";
 
-export default defineNuxtModule({
+// Module options TypeScript interface definition
+export interface ModuleOptions {}
+
+export default defineNuxtModule<ModuleOptions>({
 	meta: {
-		name: "s22y-Smoothy",
-		configKey: "s22y-Smoothy",
+		name: "nuxt-smoothy",
+		configKey: "nuxtSmoothy",
 	},
+	// Default configuration options of the Nuxt module
 	defaults: {
 		mdc: true,
 	},
-	setup(options, nuxt) {
+	setup(_options: any, _nuxt: any) {
 		// 解析 runtime 路径
 		const resolver = createResolver(import.meta.url);
 		const runtimeDir = resolver.resolve("./runtime");
@@ -27,15 +31,15 @@ export default defineNuxtModule({
 		addPlugin(resolver.resolve("./runtime/mediumZoom.client.ts"));
 
 		// 添加样式文件
-		nuxt.options.css = nuxt.options.css || [];
-		nuxt.options.css.push(runtimeStylesPath);
-		nuxt.options.css.push(shikiStylesPath);
-		nuxt.options.css.push(componentsPath);
+		_nuxt.options.css = _nuxt.options.css || [];
+		_nuxt.options.css.push(runtimeStylesPath);
+		_nuxt.options.css.push(shikiStylesPath);
+		_nuxt.options.css.push(componentsPath);
 
 		// 钩子：检查 markdown 文件是否用到 MDC 语法
-		nuxt.hook("pages:extend", (pages) => {
-			if (options.mdc) {
-				nuxt.options.runtimeConfig.public.mdcEnabled = true;
+		_nuxt.hook("pages:extend", () => {
+			if (_options.mdc) {
+				_nuxt.options.runtimeConfig.public.mdcEnabled = true;
 			}
 		});
 	},

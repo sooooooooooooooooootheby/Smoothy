@@ -1,0 +1,25 @@
+{
+	"private": true,
+	"name": "my-module-playground",
+	"type": "module",
+	"scripts": {
+		"dev": "nuxi dev",
+		"build": "nuxi build",
+		"generate": "nuxi generate"
+	},
+	"dependencies": {
+		"@nuxt/content": "^3.7.1",
+		"@tailwindcss/vite": "^4.1.13",
+		"better-sqlite3": "^12.4.1",
+		"nuxt": "^4.1.2",
+		"tailwindcss": "^4.1.13"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@tailwindcss/oxide",
+			"better-sqlite3",
+			"esbuild"
+		]
+	}
+}
